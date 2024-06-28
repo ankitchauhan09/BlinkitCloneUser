@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2.45dp">
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cvProduct"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:backgroundTint="@color/white"
+        android:elevation="0dp"
+        app:cardCornerRadius="20dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/rv_product_view_image_slider"
+                android:layout_width="match_parent"
+                android:layout_height="176dp"
+                app:iss_auto_cycle="false" />
+
+            <TextView
+                android:id="@+id/rv_product_view_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Product Name"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rv_product_view_product_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Quantity"
+                android:textSize="18dp"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/rv_product_view_product_price"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Price"
+                        android:textSize="18dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/rv_product_view_product_edit_btn"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/green"
+                        android:text="Add"
+                        android:textColor="@color/white"
+                        android:visibility="visible"
+                        app:cornerRadius="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:background="@drawable/product_view_incrementer_drawable"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:id="@+id/productViewProductCount"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:gravity="center">
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="-"
+                            android:textSize="20dp"
+                            android:id="@+id/product_cart_count_decrementer"
+                            android:textColor="#FFFFFF"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="0"
+                            android:gravity="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            android:id="@+id/product_cart_count_value"/>
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="+"
+                            android:textSize="20dp"
+                            android:id="@+id/product_cart_count_incrementer"
+                            android:textColor="#FFFFFF"/>
+
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

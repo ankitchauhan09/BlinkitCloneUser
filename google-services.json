@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "1041089886935",
+    "firebase_url": "https://blinkitclone-948e2-default-rtdb.firebaseio.com",
+    "project_id": "blinkitclone-948e2",
+    "storage_bucket": "blinkitclone-948e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1041089886935:android:03ff714a71f99609720e92",
+        "android_client_info": {
+          "package_name": "com.example.blinkiadminclone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr4mETGqdK_4pdMbiKCzuLy0Ez6uNlh8Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1041089886935:android:3414f45b13b3786b720e92",
+        "android_client_info": {
+          "package_name": "com.example.blinkituserclone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr4mETGqdK_4pdMbiKCzuLy0Ez6uNlh8Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1041089886935:android:f1ad3601b160556b720e92",
+        "android_client_info": {
+          "package_name": "com.example.blinkitusersideclone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr4mETGqdK_4pdMbiKCzuLy0Ez6uNlh8Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

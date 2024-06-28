@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:backgroundTint="@color/white"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="13dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/llOrderDate"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="7dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tvOrderDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:textStyle="bold"
+                    android:background="#DDDDDD"
+                    android:textSize="17dp"
+                    android:textColor="@color/blue"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvOrderStatus"
+                    android:layout_weight="0.35"
+                    android:background="#DDDDDD"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="#DDDDDD"
+                    android:layout_weight="0.75"
+                    android:textSize="18dp"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:maxLines="2"
+                    android:id="@+id/tvOrderTitle"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:background="#DDDDDD"
+                    android:textColor="@color/green"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:gravity="end"
+                    android:id="@+id/tvOrderAmount"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
